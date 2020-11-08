@@ -7,13 +7,10 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
-            <a-asset-item id="flowerpot-asset" src="https://arjs-cors-proxy.herokuapp.com/https://alokajoshii.github.io/ar-test/models/flowers/scene.gltf"></a-asset-item>
+            <a-asset-item id="flowerpot-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <!--<a-entity
-            gltf-model="#flowerpot-asset" scale="10">
-        </a-entity> -->
-        <a-entity gltf-model="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-entity>
+        <a-entity gltf-model="#flowerpot-asset" scale="2" </a-entity>
         <!-- <a-box color="tomato" depth="2" height="2.5" width="0.5"></a-box> -->
       </a-marker>
       <a-entity camera></a-entity>
