@@ -5,16 +5,18 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <!-- for gltf 2.0 -->
-  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-  
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
             <a-asset-item id="flowerpot-asset" src="https://alokajoshii.github.io/ar-test/models/flowers/scene.gltf"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-entity gltf-model-next="#flowerpot-asset" scale="2" </a-entity>
+         <a-entity
+            position="0 -1 0"
+            scale="0.05 0.05 0.05"
+            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            ></a-entity>
+        <!-- <a-entity gltf-model-next="#flowerpot-asset" scale="2" </a-entity> -->
         <!-- <a-box color="tomato" depth="2" height="2.5" width="0.5"></a-box> -->
       </a-marker>
       <a-entity camera></a-entity>
